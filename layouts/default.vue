@@ -1,6 +1,15 @@
 <template>
   <div>
     <Nuxt />
+
+    <div v-if="$auth.loggedIn">
+      <!-- username -->
+      <!-- logout button -->
+    </div>
+    <div v-else>
+      <!-- login -->
+      <!-- logout -->
+    </div>
   </div>
 </template>
 
