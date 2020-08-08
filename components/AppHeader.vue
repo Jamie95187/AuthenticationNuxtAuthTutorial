@@ -1,7 +1,7 @@
 <template>
   <div v-if="$auth.loggedIn">
     {{ $auth.user.email }}
-    <button text>Logout</button>
+    <button text @click="$auth.logout">Logout</button>
     <!-- username -->
     <!-- logout button -->
   </div>

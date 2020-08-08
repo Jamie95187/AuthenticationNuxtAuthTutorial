@@ -13,6 +13,9 @@
     },
     methods: {
       loginUser(loginfo){
+        this.$auth.loginWith('local', {
+          data: logininfo
+        })
         alert("You pressed a button")
       }
     }

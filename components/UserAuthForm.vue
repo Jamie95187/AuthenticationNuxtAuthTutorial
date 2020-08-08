@@ -33,8 +33,8 @@
         valid: false,
         showPassword: false,
         userInfo: {
-          email: '',
-          password: '',
+          email: 'text1@example.com',
+          password: 'test1',
         },
         ...validations
       }

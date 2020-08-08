@@ -58,5 +58,20 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+  },
+  auth: {
+  strategies: {
+    local: {
+      endpoints: {
+        login: { url: '/sessions', method: 'post', propertyName: 'token' },
+        logout: { url: '/sessions', method: 'delete' },
+        user: { url: '/sessions/user', method: 'get', propertyName: 'user' }
+      },
+      // tokenRequired: true,
+      // tokenType: 'bearer',
+      // globalToken: true,
+      // autoFetchUser: true
+    }
   }
+}
 }
