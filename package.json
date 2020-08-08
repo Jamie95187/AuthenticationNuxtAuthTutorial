@@ -12,7 +12,8 @@
     "@nuxtjs/auth": "^4.9.1",
     "@nuxtjs/axios": "^5.12.1",
     "nuxt": "^2.14.0",
-    "vuetify": "^2.2.11"
+    "vuetify": "^2.2.11",
+    "webpack": "^4.44.1"
   },
   "devDependencies": {
     "sass": "^1.19.0",
