@@ -6,8 +6,8 @@
     <!-- logout button -->
   </div>
   <div v-else>
-    <button text to="/login">Login</button>
-    <button text to="/register">Register</button>
+    <nuxt-link text to="/login">Login</nuxt-link>
+    <nuxt-link text to="/register">Register</nuxt-link>
     <!-- login -->
     <!-- logout -->
   </div>

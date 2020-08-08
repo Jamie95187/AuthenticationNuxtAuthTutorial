@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Login</h1>
-    <UserAuthForm buttonText="Login" :submitForm="loginUser" />
+    <h1>Register</h1>
+    <UserAuthForm buttonText="Register" :submitForm="registerUser", hasName="true" />
   </div>
 </template>
 
@@ -12,7 +12,7 @@
       UserAuthForm
     },
     methods: {
-      loginUser(loginfo){
+      registerUser(registrationinfo){
         alert("You pressed a button")
       }
     }

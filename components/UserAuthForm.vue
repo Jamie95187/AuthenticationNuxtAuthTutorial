@@ -1,11 +1,11 @@
 <template>
   <div>
     <form v-model="valid">
-      <!-- <input v-model="userInfo.name"
+      <input v-model="userInfo.name"
                 placeholder="Name..."
                 label="Name"
                 :rules="[required('name')]"
-                v-if="hasName" /> -->
+                v-if="hasName" />
       <input v-model="userInfo.email"
                 placeholder="Email Address..."
                 label="Email"
