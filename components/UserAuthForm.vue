@@ -1,16 +1,16 @@
 <template>
   <div>
     <form v-model="valid">
-      <textarea v-model="userInfo.name"
+      <!-- <input v-model="userInfo.name"
                 placeholder="Name..."
                 label="Name"
                 :rules="[required('name')]"
-                v-if="hasName" />
-      <textarea v-model="userInfo.email"
+                v-if="hasName" /> -->
+      <input v-model="userInfo.email"
                 placeholder="Email Address..."
                 label="Email"
                 :rules="[required('email'), emailFormat()]"/>
-      <textarea v-model="userInfo.password"
+      <input v-model="userInfo.password"
                     label="Password"
                     placeholder="Password..."
                     :type="showPassword ? 'text' : 'password'"
@@ -19,7 +19,7 @@
                     counter=true
                     :rules="[required('password'), minLength('password', 8)]"/>
 
-      <button @click="submitForm(userInfo)" :disabled="!valid">{{ buttonText }}</button>
+      <button @click="submitForm(userInfo)">login</button>
     </form>
   </div>
 </template>
