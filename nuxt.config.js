@@ -59,6 +59,9 @@ export default {
   */
   build: {
   },
+  axios: {
+    baseURL: 'http://localhost:3000/api'
+  },
   auth: {
   strategies: {
     local: {
